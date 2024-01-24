@@ -3,7 +3,7 @@
 
   <p align="center">
     <strong>Explore the docs »</strong>
-    <a href="https://rshaarma.github.io/work-planner/" target="_blank">Deployed URL</a>
+    <a href="https://rshaarma.github.io/profile-generator/" target="_blank">Deployed URL</a>
     ·
     <a href="https://github.com/rshaarma/profile-generator/issues">Report Bug</a>
     ·
