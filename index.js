@@ -11,7 +11,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./src/page-template.js");
 
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
-const team = [];
+const completeTeam = [];
 
 function start() {
   managerQuestions();
@@ -48,7 +48,8 @@ function managerQuestions() {
         value.email,
         value.officeNumber
       );
-      team.push(manager);
+      console.table(manager);
+      completeTeam.push(manager);
       addTeamMember();
     });
 }
@@ -104,7 +105,8 @@ function engineerInputs() {
         value.email,
         value.github
       );
-      team.push(engineer);
+      console.table(engineer);
+      completeTeam.push(engineer);
       addTeamMember();
     });
 }
@@ -140,7 +142,8 @@ function internInputs() {
         value.email,
         value.school
       );
-      team.push(intern);
+      console.table();
+      completeTeam.push(intern);
       addTeamMember();
     });
 }
@@ -149,7 +152,7 @@ function createFile() {
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR);
   } else {
-    fs.writeFileSync(outputPath, render(team), "UTF-8");
+    fs.writeFileSync(outputPath, render(completeTeam), "UTF-8");
   }
 }
 start();
