@@ -13,10 +13,6 @@ const render = require("./src/page-template.js");
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
 const completeTeam = [];
 
-// function start() {
-//   managerQuestions();
-// }
-
 const manager = async () => {
   const managerInputs = await inquirer.prompt([
     {
@@ -137,7 +133,7 @@ const menu = async () => {
   } else if (chosenOption.menu === "Intern") {
     await intern();
   } else {
-    console.log("Team:", teams);
+    console.log("Team:", completeTeam);
     return;
   }
 };
