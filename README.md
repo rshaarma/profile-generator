@@ -9,7 +9,6 @@
     ·
     <a href="https://github.com/rshaarma/profile-generator/issues">Request Feature</a>
   </p>
-</p>
 
 <!-- TABLE OF CONTENTS -->
 
